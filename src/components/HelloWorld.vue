@@ -25,7 +25,13 @@
         <!-- counter w/ interpolation -->
         <div>
           <button class="btn btn-secondary my-2" v-on:click="counter++">
-            Button clicked {{counter}} times
+            Up counter <i class="fas fa-arrow-up"></i>
+          </button>
+          <span class="h4">
+            Counter at {{counter}} times
+          </span>
+          <button class="btn btn-secondary my-2" v-on:click="counter--">
+            Down counter <i class="fas fa-arrow-down"></i>
           </button>
         </div>
     </div>
@@ -118,16 +124,15 @@ export default {
     return {
       msg: 'Enjoy Vue.js',
       msg2: 'Bootstrap4 and FontAwesome5 are gtg!',
-      //<!-- iterate over a list -->
+      // iterate over a list
       wizards: [
         { first: 'Ginny', last: 'Weasley' },
-        { first: 'Severus', last: 'Snape' },
         { first: 'Hermione', last: 'Granger' },
         { first: 'Albus', last: 'Dumbledore' },
       ],
-      //<!-- Two-way data binding -->
+      // Two-way data binding
       input_val: '',
-      //<!-- counter w/ interpolation -->
+      // counter w/ interpolation
       counter: 0,
     };
   },
