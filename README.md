@@ -1,6 +1,6 @@
-# vue2nd
+# vue-boilerplate
 
-> A Vue.js project
+Vue.js project with basic use examples
 
 ## Build Setup
 
