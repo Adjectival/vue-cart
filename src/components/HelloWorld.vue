@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>{{ msg2 }}</h2>
-    <h2 class="mauvey">Data Binding & Directives Example</h2>
+    <h2 class="bg-primary">Directives & Data Binding Examples</h2>
     <div class="card p-1 m-3">
       <h3>
         <i class="fas fa-magic"></i>
@@ -139,30 +139,7 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-.mauvey {
-  background-color: #ac54a1;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-h2 {
-  color: #2e120b;
-}
-a {
-  color: #d62291;
-}
-.card {
-  background: linear-gradient(to top, gainsboro, snow);
-}
 
+<style lang="scss">
+    @import "../assets/main.scss";
 </style>
