@@ -2,8 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>{{ msg2 }}</h2>
-    <h2 class="bg-primary">Directives & Data Binding Examples</h2>
-    <div class="card p-1 m-3">
+
+    <h2 class="bg-primary">Data Binding Example</h2>
+    <div class="card p-2 m-3 w-50 mx-auto">
       <h3>
         <i class="fas fa-magic"></i>
         Wizards
@@ -22,20 +23,54 @@
           <span>Add a name: </span>
           <input type="text" v-model="input_val">
         </div>
+    </div>
+
+    <h2 class="bg-info">Dynamic Styling Example</h2>
+    <div class="card p-2 m-3 w-50 mx-auto">
+      <h3>
+        <i class="fas fa-cog"></i>
+        UX Font Size
+      </h3>
+      <!-- dynamic style -->
+        <button
+        class="btn btn-secondary my-2"
+        v-on:click="fontSize++">
+            <i class="fas fa-sort-alpha-up"></i>
+            Increase font size
+        </button>
+
+        <p
+        class="mt-2"
+        v-bind:style="{ fontSize: fontSize + 'px' }">
+            Font size is: {{ fontSize }} pixels
+        </p>
+
+        <button
+        class="btn btn-secondary my-2"
+        v-on:click="fontSize--">
+            <i class="fas fa-sort-alpha-down"></i>
+            Decrease font size
+        </button>
+
+    </div>
+
+    <h2 class="bg-success">Counter with Interpolation</h2>
+    <div class="card p-1 m-3">
         <!-- counter w/ interpolation -->
         <div>
           <button class="btn btn-secondary my-2" v-on:click="counter++">
             Up counter <i class="fas fa-arrow-up"></i>
           </button>
-          <span class="h4">
+          <p class="h4">
             Counter at {{counter}} times
-          </span>
+          </p>
           <button class="btn btn-secondary my-2" v-on:click="counter--">
             Down counter <i class="fas fa-arrow-down"></i>
           </button>
         </div>
     </div>
-    <h2 class="bg-info">Essential Vue.js Links</h2>
+
+    <h2 class="bg-warning">Essential Vue.js Links</h2>
     <ul class="card p-1 m-3">
       <li><i class="fas fa-book"></i>
         <a
@@ -79,7 +114,8 @@
         </a>
       </li>
     </ul>
-    <h2 class="bg-info">Vue.js Ecosystem</h2>
+
+    <h2 class="bg-warning">Vue.js Ecosystem</h2>
     <ul class="card p-1 m-3">
       <li><i class="fas fa-cog"></i>
         <a
@@ -132,6 +168,8 @@ export default {
       ],
       // Two-way data binding
       input_val: '',
+      // Dynamic classes
+      fontSize: 12,
       // counter w/ interpolation
       counter: 0,
     };
