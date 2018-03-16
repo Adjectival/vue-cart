@@ -1,13 +1,13 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 class="text-primary">{{ msg }}</h1>
     <h2>{{ msg2 }}</h2>
 
     <h2 class="bg-primary">Data Binding Example</h2>
     <div class="card p-2 m-3 w-50 mx-auto">
       <h3>
         <i class="fas fa-magic"></i>
-        Wizards
+        Wizard List
       </h3>
       <!-- iterate over a list -->
       <ul>
@@ -40,8 +40,8 @@
         </button>
 
         <p
-        class="mt-2"
-        v-bind:style="{ fontSize: fontSize + 'px' }">
+        class="mt-2 text-black"
+        v-bind:style="{fontSize: fontSize + 'px' }">
             Font size is: {{ fontSize }} pixels
         </p>
 
@@ -51,11 +51,22 @@
             <i class="fas fa-sort-alpha-down"></i>
             Decrease font size
         </button>
-
     </div>
 
-    <h2 class="bg-success">Counter with Interpolation</h2>
-    <div class="card p-1 m-3">
+    <h2 class="bg-success">Dynamic Class!</h2>
+    <div class="card pt-3 m-3 w-75 mx-auto">
+        <!-- add class from UX -->
+        <ul>
+            <li v-for="item in menuItems"
+            v-on:click="buttonized = item"
+            v-bind:class="{ buttonized: buttonized == item }">
+                {{item}}
+            </li>
+        </ul>
+    </div>
+
+    <h2 class="bg-warning">Easy Iteration</h2>
+    <div class="card p-1 m-3 w-75 mx-auto">
         <!-- counter w/ interpolation -->
         <div>
           <button class="btn btn-secondary my-2" v-on:click="counter++">
@@ -70,7 +81,7 @@
         </div>
     </div>
 
-    <h2 class="bg-warning">Essential Vue.js Links</h2>
+    <h2 class="bg-danger">Essential Vue.js Links</h2>
     <ul class="card p-1 m-3">
       <li><i class="fas fa-book"></i>
         <a
@@ -115,7 +126,7 @@
       </li>
     </ul>
 
-    <h2 class="bg-warning">Vue.js Ecosystem</h2>
+    <h2 class="bg-danger">Vue.js Ecosystem</h2>
     <ul class="card p-1 m-3">
       <li><i class="fas fa-cog"></i>
         <a
@@ -168,8 +179,11 @@ export default {
       ],
       // Two-way data binding
       input_val: '',
-      // Dynamic classes
+      // Dynamic styling
       fontSize: 12,
+      // Dynamic classes
+      buttonized: 'Home',
+      menuItems: ['Home', 'About', 'Contact'],
       // counter w/ interpolation
       counter: 0,
     };
