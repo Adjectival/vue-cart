@@ -2,6 +2,8 @@
 
 Vue.js project with basic use examples
 
+:v: [View live on gh-pages](https://adjectival.github.io/vue-boilerplate/)
+
 ## Build Setup
 
 ``` bash
