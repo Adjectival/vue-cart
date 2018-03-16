@@ -1,30 +1,27 @@
-# :v: vue-boilerplate
+# [:v: vue-boilerplate](https://adjectival.github.io/vue-boilerplate/)
 
-Vue.js project with basic use examples
+Vue.js project with basic use examples and easy deployment to GitHub Pages. Fork and enjoy.
 
-[View live on gh-pages](https://adjectival.github.io/vue-boilerplate/)
+# [Live demo](https://adjectival.github.io/vue-boilerplate/)
 
-## Build Setup
+## How To Build
 
-``` bash
-# install dependencies
-npm install
+### :wrench: 1. install dependencies
+```npm install```
 
-# serve with hot reload at localhost:8080
-npm run dev
+### 2. development serve with hot reload at localhost:8080
+```npm run dev```
 
-# build for production with minification
-npm run build
+### optional: build for production with minification, good for use with other deploy scripts
+```npm run build```
 
-# build for production and view the bundle analyzer report
-npm run build --report
+## :rocket: 3. to use github-pages deploy script
+1. create new gh-pages branch
+2. under Settings > GithubPages > Source, choose [master branch /docs folder]
+3. edit package.json Homepage: to use your gh account and repo
 
-# to use github-pages deploy script
-## alter package.json Homepage: to use your own gh account and repo, then
-npm run deploy
+```npm run deploy```
 
-### https://npm.runkit.com/vue-gh-pages
+#### [:memo: GH-pages module further instruction...](https://npm.runkit.com/vue-gh-pages)
 
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For a detailed explanation on how VUE.js works, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
