@@ -1,8 +1,8 @@
-# vue-boilerplate
+# :v: vue-boilerplate
 
 Vue.js project with basic use examples
 
-:v: [View live on gh-pages](https://adjectival.github.io/vue-boilerplate/)
+[View live on gh-pages](https://adjectival.github.io/vue-boilerplate/)
 
 ## Build Setup
 

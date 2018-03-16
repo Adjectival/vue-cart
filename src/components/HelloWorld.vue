@@ -4,7 +4,7 @@
     <h2>{{ msg2 }}</h2>
 
     <h2 class="bg-primary">Data Binding Example</h2>
-    <div class="card p-2 m-3 w-50 mx-auto">
+    <div class="card p-2 m-3 w-75 mx-auto">
       <h3>
         <i class="fas fa-magic"></i>
         Wizard List
@@ -26,7 +26,7 @@
     </div>
 
     <h2 class="bg-info">Dynamic Styling Example</h2>
-    <div class="card p-2 m-3 w-50 mx-auto">
+    <div class="card p-2 m-3 w-75 mx-auto">
       <h3>
         <i class="fas fa-cog"></i>
         UX Font Size
