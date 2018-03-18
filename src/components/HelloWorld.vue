@@ -7,7 +7,7 @@
     <div class="card p-2 m-3 w-75 mx-auto">
       <h3>
         <i class="fas fa-magic"></i>
-        Wizard List
+        TEST List
       </h3>
       <!-- iterate over a list -->
       <ul>
