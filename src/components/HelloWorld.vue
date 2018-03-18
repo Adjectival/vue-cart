@@ -7,7 +7,7 @@
     <div class="card p-2 m-3 w-75 mx-auto">
       <h3>
         <i class="fas fa-magic"></i>
-        TEST List
+        TEST
       </h3>
       <!-- iterate over a list -->
       <ul>
@@ -173,9 +173,7 @@ export default {
       msg2: 'Bootstrap4 and FontAwesome5 are gtg!',
       // iterate over a list
       wizards: [
-        { first: 'Ginny', last: 'Weasley' },
-        { first: 'Hermione', last: 'Granger' },
-        { first: 'Albus', last: 'Dumbledore' },
+        { first: 'Jeff', last: 'Sessions' },
       ],
       // Two-way data binding
       input_val: '',
