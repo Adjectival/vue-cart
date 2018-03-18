@@ -1,10 +1,14 @@
-# [:v: vue-boilerplate](https://adjectival.github.io/vue-boilerplate/)
+# [:v: vue-cart](https://adjectival.github.io/vue-cart/)
 
-Vue.js project with basic use examples and easy deployment to GitHub Pages. Fork and enjoy.
+Vue.js & VUEX demo, features juicy shopping cart UX.
 
-# [Live demo](https://adjectival.github.io/vue-boilerplate/)
+UI/UX with Font Awesome 5, Bootstrap 4, CSS3.
 
-## How To Build
+# [Live demo](https://adjectival.github.io/vue-cart/)
+
+## How To Rebuild
+
+### 🍴 Fork this repo
 
 ### :wrench: 1. install dependencies
 ```npm install```
