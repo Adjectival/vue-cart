@@ -9,7 +9,7 @@ Vue.js project with basic use examples and easy deployment to GitHub Pages. Fork
 ### :wrench: 1. install dependencies
 ```npm install```
 
-### 2. development serve with hot reload at localhost:8080
+### 2. serve for development with hot reload @ localhost:8080
 ```npm run dev```
 
 ### optional: build for production with minification, good for use with other deploy scripts
