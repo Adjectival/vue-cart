@@ -57,10 +57,10 @@ const getters = {
 
 // store actions
 const actions = {
-    addToCart() {
-        types.ADD_TO_CART, {
+    addToCart({ commit }, product) {
+        commit(types.ADD_TO_CART, {
             id: product.id
-        }
+        })
     }
 }
 
