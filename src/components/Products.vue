@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid text-left">
-      <h1>Our Store, All Products</h1>
+      <h1>vuex Store: All Products</h1>
       <h3>Featuring {{ length }} products</h3>
       <table class="table table-striped">
           <thead>

@@ -28,6 +28,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: firebrick;
-  margin-top: 60px;
+  margin-top: 10px;
+  background: linear-gradient(to top, pink, snow);
+  height: 100vh;
 }
 </style>

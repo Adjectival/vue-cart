@@ -2,7 +2,7 @@
     <nav class="navbar navbar-light bg-light" id="navbar">
         <a class="navbar-brand" href="#!">
             <img src="../assets/logo.png" class="navlogo">
-            <h4>What A Store</h4>
+            <h4>Light Item Store</h4>
         </a>
         <router-link class="nav-link active" href="#!">Active</router-link>
         <router-link class="nav-link" href="#!">Link</router-link>
