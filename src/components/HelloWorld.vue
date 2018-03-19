@@ -11,7 +11,10 @@
       </h3>
       <!-- iterate over a list -->
       <ul>
-        <li v-for="wizard in wizards">
+        <li
+        v-bind:key="wizard"
+        v-for="wizard in wizards
+        ">
           {{ wizard.first }} {{ wizard.last }}
         </li>
         <li>
@@ -57,9 +60,12 @@
     <div class="card pt-3 m-3 w-75 mx-auto">
         <!-- add class from UX -->
         <ul>
-            <li v-for="item in menuItems"
+            <li
+            v-for="item in menuItems"
+            v-bind:key="item"
             v-on:click="buttonized = item"
-            v-bind:class="{ buttonized: buttonized == item }">
+            v-bind:class="{ buttonized: buttonized == item }
+            ">
                 {{item}}
             </li>
         </ul>
@@ -81,86 +87,7 @@
         </div>
     </div>
 
-    <h2 class="bg-danger">Essential Vue.js Links</h2>
-    <ul class="card p-1 m-3">
-      <li><i class="fas fa-book"></i>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li><i class="fas fa-heart"></i>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li><i class="fab fa-github"></i>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li><i class="fab fa-twitter"></i>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li><i class="fas fa-boxes"></i>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
 
-    <h2 class="bg-danger">Vue.js Ecosystem</h2>
-    <ul class="card p-1 m-3">
-      <li><i class="fas fa-cog"></i>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li><i class="fas fa-cog"></i>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li><i class="fas fa-cog"></i>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li><i class="fas fa-cog"></i>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
   </div>
 </template>
 
