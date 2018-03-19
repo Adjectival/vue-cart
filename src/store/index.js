@@ -37,8 +37,32 @@ const state = {
     ]
 }
 
+// store access =aka= getters
+const getters = {
+    allProducts: state => state.all,
+    numberOfProducts: state => (state.all) ? state.all.length : 0,
+    cartProducts: state => {
+        return state.added.map(({ id, quantity }) => {
+            const product = state.all.find( p => p.id === id)
 
+            return {
+                name: product.name,
+                price: product.price,
+                description: product.description,
+                quantity
+            }
+        })
+    }
+}
 
+// store actions
+const actions = {
+    addToCart() {
+        types.ADD_TO_CART, {
+            id: product.id
+        }
+    }
+}
 
 // state mutations allowed in store
 const mutations = {
@@ -59,11 +83,11 @@ const mutations = {
 
 }
 
-// store for App products inventory
+// store properties
 export default new Vuex.Store({
-    state,
     strict: debug,
-    mutations,
+    state,
     getters,
-    setters
+    actions,
+    mutations
 })
